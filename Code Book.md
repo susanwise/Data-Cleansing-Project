@@ -22,7 +22,7 @@ There are 2 folders under the main directory.  One folder for "test" observation
 2 - subject_train.txt - this contains the participant associated with each row of observations
 3 - y_train.txt - this contains the activity code associated with each row of observations
 
-**Steps to create Tidy Data **
+**Steps to create Tidy Data**
 
 The following steps were used to create the Tidy Data from these 8 text file.  (your working directory must be set to the folder that contains the UCI HAR Dataset directory for the run\_analysis function to execute and provide the tidy\_data.)
 
@@ -64,41 +64,7 @@ Factor - the name that corresponds to each activity
 
 **Columns 4 - 69**
 
-Number - there are 2 columns for each feature described below - one column that is the Average Mean and a second column that is the Average Standard Deviation.  The features are descibed in detail below.
-
-**Feature Selection **
-
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
-
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
-
-The set of variables that were estimated from these signals are: 
-mean(): Mean value
-std(): Standard deviation
-
-There are 33 feature variables for mean() and 33 feature variables for std()
+Number - there are 2 columns for each feature described in the Feature Selection - one column that is the Average Mean and a second column that is the Average Standard Deviation.  The column names are listed below followed by a section describing the features.
 
 Complete list of column names for Columns 4-69:
   tBodyAcc-mean()-X         
@@ -166,4 +132,40 @@ Complete list of column names for Columns 4-69:
   fBodyBodyGyroMag-mean()    
   fBodyBodyGyroMag-std()     
   fBodyBodyGyroJerkMag-mean()
-  fBodyBodyGyroJerkMag-std()Enter file contents here
+  fBodyBodyGyroJerkMag-std()
+
+**Feature Selection**
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+mean(): Mean value
+std(): Standard deviation
+
+There are 33 feature variables for average mean() and 33 feature variables for average std()
+
+
