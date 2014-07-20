@@ -24,8 +24,8 @@ There are 2 folders under the main directory.  One folder for "test" observation
 
 **Steps to create Tidy Data **
 
-The following steps were used to create the Tidy Data from these 8 text file.
-(your working directory must be set to the folder that contains the UCI HAR Dataset directory for the run\_analysis function to execute and provide the tidy\_data.
+The following steps were used to create the Tidy Data from these 8 text file.  (your working directory must be set to the folder that contains the UCI HAR Dataset directory for the run\_analysis function to execute and provide the tidy\_data.)
+
 1. read features.txt
 2. read acivity_labels.txt
 3. supply column names to the activity_labels data
