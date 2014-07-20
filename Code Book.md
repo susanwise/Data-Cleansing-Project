@@ -68,6 +68,7 @@ Factor - the name that corresponds to each activity
 Number - there are 2 columns for each feature described in the Feature Selection - one column that is the Average Mean and a second column that is the Average Standard Deviation.  The column names are listed below followed by a section describing the features.
 
 Complete list of column names for Columns 4-69:
+
   tBodyAcc-mean()-X         
   tBodyAcc-mean()-Y          
   tBodyAcc-mean()-Z          
@@ -128,11 +129,11 @@ Complete list of column names for Columns 4-69:
   fBodyGyro-std()-Z          
   fBodyAccMag-mean()         
   fBodyAccMag-std()          
-  fBodyBodyAccJerkMag-mean() 
+  fBodyBodyAccJerkMag-mean()
   fBodyBodyAccJerkMag-std()  
   fBodyBodyGyroMag-mean()    
   fBodyBodyGyroMag-std()     
-  fBodyBodyGyroJerkMag-mean()
+  fBodyBodyGyroJerkMag-mean() 
   fBodyBodyGyroJerkMag-std()
 
 **Feature Selection**
