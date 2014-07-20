@@ -10,10 +10,29 @@ The following files/scripts are attached to this project.
 - This script contains a function run\_analysis that will create the tidy data using the data that was unloaded using the unload\_data script.   
 - For this function to run correctly, the working directory must be set to the "data" directory before executing (or wherever you unloaded the Zip file).   To verify the directory is correct, execute the dir() command and validate that "UCI HAR Dataset" is listed.
 - The output of this function will be a tidy\_data data.table that contains aggregate data (the class requirement) and an obs\_dt data frame that contains the unsummarized data.  The columns are the same in each data frame.
-- refer to the **CodeBook** to see the detailed steps used to create the tidy_data data.table as well as details on the source data used for this analysis.
+- steps used to create the tidy\_data data.table are listed below.  Refer to the **CodeBook** to see details on the source data used for this analysis as well as additional information on the tidy\_data. 
 
 **store_tidy_data**
 - this script was used to store the tidy_data data table on my hard drive so it could be uploaded to github.  
+
+**Steps to create Tidy Data**
+=============================
+The following steps were used to create the Tidy Data from these 8 text file.  (your working directory must be set to the folder that contains the UCI HAR Dataset directory for the run\_analysis function to execute and provide the tidy\_data.)
+
+1. read features.txt
+2. read acivity_labels.txt
+3. supply column names to the activity_labels data
+4. set directory to the test directory and read the three test files
+5. supply the column names to the X\_test observations using the data supplied in the features.txt file.   Supply column names to the Subject\_test and y\_test data.
+6. subset the X\_test data to only include the mean() and std() features.
+7. Combine the X\_test, y\_test and subject\_test data using cbind.
+8.  set the directory to the train direcotry and read the three train files.
+9.  repeat the steps taken for the test data using the train data(steps 5-7)
+10. combine the test and train data using rbind.
+11. add a column to contain a activity name.
+12  convert the data frame to a data table and aggregate the data into one row per participant and activity calculating the average for each feature.
+13. sort the aggregated data to create  tidy_data 
+
 
 **Overview of Data in Tidy_Data**
 =================================   
