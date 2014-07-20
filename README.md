@@ -102,8 +102,8 @@ Complete list of **column names** for Columns 4-69:
   fBodyAccMag-std()          
   fBodyBodyAccJerkMag-mean() 
   fBodyBodyAccJerkMag-std()  
-  fBodyBodyGyroMag-mean()    
-  fBodyBodyGyroMag-std()     
-  fBodyBodyGyroJerkMag-mean()
-  fBodyBodyGyroJerkMag-std() 
+  fBodyBodyGyroMag-mean()  
+  fBodyBodyGyroMag-std()    
+  fBodyBodyGyroJerkMag-mean() 
+  fBodyBodyGyroJerkMag-std()  
 
