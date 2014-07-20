@@ -59,6 +59,7 @@ Number - there are 66 columns of variables. These columns were selected from the
 Of the 66 variables, 33 features are for mean() and 33 features are for std()
 
 Complete list of **column names** for Columns 4-69:
+  
   tBodyAcc-mean()-X         
   tBodyAcc-mean()-Y          
   tBodyAcc-mean()-Z          
@@ -119,10 +120,10 @@ Complete list of **column names** for Columns 4-69:
   fBodyGyro-std()-Z          
   fBodyAccMag-mean()         
   fBodyAccMag-std()          
-  fBodyBodyAccJerkMag-mean() 
+  fBodyBodyAccJerkMag-mean()                                                   
   fBodyBodyAccJerkMag-std()  
   fBodyBodyGyroMag-mean()  
   fBodyBodyGyroMag-std()    
-  fBodyBodyGyroJerkMag-mean() 
+  fBodyBodyGyroJerkMag-mean()                                                                 
   fBodyBodyGyroJerkMag-std()  
 
