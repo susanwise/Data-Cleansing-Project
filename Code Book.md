@@ -5,17 +5,20 @@ Code Book for tidy_data
 The source of the data was downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip .  
 
 The main directory for the data is "UCI HAR Dataset".  At the main directory level, the following 2 files were read:
+
 1. activity_labels.txt  THis file contains the Activity Names associated with the codes 1-6.
 2. features.txt  This file contains the column names for the 561 columns contained in the data files.
 
 There are 2 folders under the main directory.  One folder for "test" observations and a second folder for "train" observations.  Each of these folders contains 3 files that were used to create the Tidy_Data.
 
 **Test Files**
+
 1. X\_test.txt - this contains the observations
 2. subject_test.txt - this contains the participant associated with each row of observations
 3. y\_test.txt - this contains the activity code associated with each row of observations
 
 **Train Files**
+
 1. X_train.txt - this contains the observations
 2. subject_train.txt - this contains the participant associated with each row of observations
 3. y_train.txt - this contains the activity code associated with each row of observations
