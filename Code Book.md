@@ -1,6 +1,7 @@
 Code Book for tidy_data
 =======================
 **Overview of Data used to create Tidy_Data**
+
 The source of the data was downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip .  
 
 The main directory for the data is "UCI HAR Dataset".  At the main directory level, the following 2 files were read:
@@ -10,26 +11,28 @@ The main directory for the data is "UCI HAR Dataset".  At the main directory lev
 There are 2 folders under the main directory.  One folder for "test" observations and a second folder for "train" observations.  Each of these folders contains 3 files that were used to create the Tidy_Data.
 
 **Test Files**
-1 - X_test.txt - this contains the observations
+
+1 - X\_test.txt - this contains the observations
 2 - subject_test.txt - this contains the participant associated with each row of observations
-3 - y_test.txt - this contains the activity code associated with each row of observations
+3 - y\_test.txt - this contains the activity code associated with each row of observations
 
 **Train Files**
+
 1- X_train.txt - this contains the observations
 2 - subject_train.txt - this contains the participant associated with each row of observations
 3 - y_train.txt - this contains the activity code associated with each row of observations
 
 **Steps to create Tidy Data **
-The following steps were used to create the Tidy Data from these 8 text file.
-(your working directory must be set to the folder that contains the UCI HAR Dataset directory for the run_analysis function to execute and provide the tidy_data.
 
+The following steps were used to create the Tidy Data from these 8 text file.
+(your working directory must be set to the folder that contains the UCI HAR Dataset directory for the run\_analysis function to execute and provide the tidy\_data.
 1. read features.txt
 2. read acivity_labels.txt
 3. supply column names to the activity_labels data
 4. set directory to the test directory and read the three test files
-5. supply the column names to the X_test observations using the data supplied in the features.txt file.   Supply column names to the Subject_test and y_test data.
-6. subset the X_test data to only include the mean() and std() features.
-7. Combine the X_test, y_test and subject_test data using cbind.
+5. supply the column names to the X\_test observations using the data supplied in the features.txt file.   Supply column names to the Subject\_test and y\_test data.
+6. subset the X\_test data to only include the mean() and std() features.
+7. Combine the X\_test, y\_test and subject\_test data using cbind.
 8.  set the directory to the train direcotry and read the three train files.
 9.  repeat the steps taken for the test data using the train data(steps 5-7)
 10. combine the test and train data using rbind.
@@ -38,15 +41,19 @@ The following steps were used to create the Tidy Data from these 8 text file.
 13. sort the aggregated data to create  tidy_data 
 
 **Overview of Data in Tidy_Data** 
-The "tidy_data" set has 180 rows of data.  There were 30 participants in this study that were each measured for 6 distint activities. Averages for each measured feature value are presented for every participant for each activity (6 rows of data for each participant).  The columns contained in the "tidy_data" are documented below.  There was a total of 10299 data rows that were grouped by Participant and Activity with the Average calculated for columns 4-69 which are described in detail below.
+
+The "tidy\_data" set has 180 rows of data.  There were 30 participants in this study that were each measured for 6 distint activities. Averages for each measured feature value are presented for every participant for each activity (6 rows of data for each participant).  The columns contained in the "tidy\_data" are documented below.  There was a total of 10299 data rows that were grouped by Participant and Activity with the Average calculated for columns 4-69 which are described in detail below.
 
 **Column 1 - Participant**
+
 Integer  - from 1-30 representing the participant number
 
 **Column 2 - Activity**
+
 Integer - code from 1-6 representing the activity that was measured
 
 **Column 3 - Activity Name** 
+
 Factor - the name that corresponds to each activity 
 1 - WALKING
 2 - WALKING_UPSTAIRS
@@ -56,10 +63,10 @@ Factor - the name that corresponds to each activity
 6 - LAYING  
 
 **Columns 4 - 69**
+
 Number - there are 2 columns for each feature described below - one column that is the Average Mean and a second column that is the Average Standard Deviation.  The features are descibed in detail below.
 
 **Feature Selection **
-=================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
