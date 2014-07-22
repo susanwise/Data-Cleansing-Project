@@ -53,7 +53,7 @@ Integer  - from 1-30 representing the participant number
 
 Integer - code from 1-6 representing the activity that was measured
 
-**Column 3 - Activity Name** 
+**Column 3 - ActivityName** 
 
 Factor - the name that corresponds to each activity 
 1 - WALKING
@@ -69,72 +69,72 @@ Number - there are 2 columns for each feature described in the Feature Selection
 
 Complete list of column names for Columns 4-69:
 
-  tBodyAcc-mean()-X         
-  tBodyAcc-mean()-Y          
-  tBodyAcc-mean()-Z          
-  tBodyAcc-std()-X           
-  tBodyAcc-std()-Y           
-  tBodyAcc-std()-Z           
-  tGravityAcc-mean()-X       
-  tGravityAcc-mean()-Y       
-  tGravityAcc-mean()-Z      
-  tGravityAcc-std()-X        
-  tGravityAcc-std()-Y        
-  tGravityAcc-std()-Z        
-  tBodyAccJerk-mean()-X      
-  tBodyAccJerk-mean()-Y      
-  tBodyAccJerk-mean()-Z      
-  tBodyAccJerk-std()-X       
-  tBodyAccJerk-std()-Y       
-  tBodyAccJerk-std()-Z       
-  tBodyGyro-mean()-X         
-  tBodyGyro-mean()-Y         
-  tBodyGyro-mean()-Z         
-  tBodyGyro-std()-X          
-  tBodyGyro-std()-Y          
-  tBodyGyro-std()-Z          
-  tBodyGyroJerk-mean()-X     
-  tBodyGyroJerk-mean()-Y     
-  tBodyGyroJerk-mean()-Z     
-  tBodyGyroJerk-std()-X      
-  tBodyGyroJerk-std()-Y      
-  tBodyGyroJerk-std()-Z      
-  tBodyAccMag-mean()         
-  tBodyAccMag-std()          
-  tGravityAccMag-mean()      
-  tGravityAccMag-std()       
-  tBodyAccJerkMag-mean()     
-  tBodyAccJerkMag-std()      
-  tBodyGyroMag-mean()        
-  tBodyGyroMag-std()         
-  tBodyGyroJerkMag-mean()    
-  tBodyGyroJerkMag-std()     
-  fBodyAcc-mean()-X          
-  fBodyAcc-mean()-Y          
-  fBodyAcc-mean()-Z          
-  fBodyAcc-std()-X           
-  fBodyAcc-std()-Y           
-  fBodyAcc-std()-Z           
-  fBodyAccJerk-mean()-X      
-  fBodyAccJerk-mean()-Y      
-  fBodyAccJerk-mean()-Z      
-  fBodyAccJerk-std()-X       
-  fBodyAccJerk-std()-Y       
-  fBodyAccJerk-std()-Z       
-  fBodyGyro-mean()-X         
-  fBodyGyro-mean()-Y         
-  fBodyGyro-mean()-Z         
-  fBodyGyro-std()-X          
-  fBodyGyro-std()-Y          
-  fBodyGyro-std()-Z          
-  fBodyAccMag-mean()         
-  fBodyAccMag-std()          
-  fBodyBodyAccJerkMag-mean()
-  fBodyBodyAccJerkMag-std()  
-  fBodyBodyGyroMag-mean()    
-  fBodyBodyGyroMag-std()     
-  fBodyBodyGyroJerkMag-mean() 
-  fBodyBodyGyroJerkMag-std()
+  AveragetBodyAcc-mean()-X         
+  AveragetBodyAcc-mean()-Y          
+  AveragetBodyAcc-mean()-Z          
+  AveragetBodyAcc-std()-X           
+  AveragetBodyAcc-std()-Y           
+  AveragetBodyAcc-std()-Z           
+  AveragetGravityAcc-mean()-X       
+  AveragetGravityAcc-mean()-Y       
+  AveragetGravityAcc-mean()-Z      
+  AveragetGravityAcc-std()-X        
+  AveragetGravityAcc-std()-Y        
+  AveragetGravityAcc-std()-Z        
+  AveragetBodyAccJerk-mean()-X      
+  AveragetBodyAccJerk-mean()-Y      
+  AveragetBodyAccJerk-mean()-Z      
+  AveragetBodyAccJerk-std()-X       
+  AveragetBodyAccJerk-std()-Y       
+  AveragetBodyAccJerk-std()-Z       
+  AveragetBodyGyro-mean()-X         
+  AveragetBodyGyro-mean()-Y         
+  AveragetBodyGyro-mean()-Z         
+  AveragetBodyGyro-std()-X          
+  AveragetBodyGyro-std()-Y          
+  AveragetBodyGyro-std()-Z          
+  AveragetBodyGyroJerk-mean()-X     
+  AveragetBodyGyroJerk-mean()-Y     
+  AveragetBodyGyroJerk-mean()-Z     
+  AveragetBodyGyroJerk-std()-X      
+  AveragetBodyGyroJerk-std()-Y      
+  AveragetBodyGyroJerk-std()-Z      
+  AveragetBodyAccMag-mean()         
+  AveragetBodyAccMag-std()          
+  AveragetGravityAccMag-mean()      
+  AveragetGravityAccMag-std()       
+  AveragetBodyAccJerkMag-mean()     
+  AveragetBodyAccJerkMag-std()      
+  AveragetBodyGyroMag-mean()        
+  AveragetBodyGyroMag-std()         
+  AveragetBodyGyroJerkMag-mean()    
+  AveragetBodyGyroJerkMag-std()     
+  AveragefBodyAcc-mean()-X          
+  AveragefBodyAcc-mean()-Y          
+  AveragefBodyAcc-mean()-Z          
+  AveragefBodyAcc-std()-X           
+  AveragefBodyAcc-std()-Y           
+  AveragefBodyAcc-std()-Z           
+  AveragefBodyAccJerk-mean()-X      
+  AveragefBodyAccJerk-mean()-Y      
+  AveragefBodyAccJerk-mean()-Z      
+  AveragefBodyAccJerk-std()-X       
+  AveragefBodyAccJerk-std()-Y       
+  AveragefBodyAccJerk-std()-Z       
+  AveragefBodyGyro-mean()-X 
+  AveragefBodyGyro-mean()-Y    
+  AveragefBodyGyro-mean()-Z         
+  AveragefBodyGyro-std()-X          
+  AveragefBodyGyro-std()-Y          
+  AveragefBodyGyro-std()-Z          
+  AveragefBodyAccMag-mean()         
+  AveragefBodyAccMag-std()          
+  AveragefBodyBodyAccJerkMag-mean()                                                   
+  AveragefBodyBodyAccJerkMag-std()  
+  AveragefBodyBodyGyroMag-mean()  
+  AveragefBodyBodyGyroMag-std()    
+  AveragefBodyBodyGyroJerkMag-mean()                                                                 
+  AveragefBodyBodyGyroJerkMag-std() 
 
 **Feature Selection**
 
