@@ -14,7 +14,7 @@ path <- "./UCI HAR Dataset"
 setwd(path)
 features <- read.table("features.txt")
 act_labels <- read.table("activity_labels.txt")
-names(act_labels) <- c("activity", "activity name")
+names(act_labels) <- c("activity", "ActivityName")
 
 ## set directory to get "test" data
 ## then get X_test data and subject_test data and add column names
@@ -55,8 +55,13 @@ tot_datax <- merge(tot_data, act_labels, all=FALSE)
 
 ## convert to data table and then summarize by participant and activity
 obs_dt <<- data.table(tot_datax)
+##add Average to the field names
+xname <- names(obs_dt)
+xname[3:68] <- paste0("Average", c(xname[3:68]))
+setnames(obs_dt, names(obs_dt), xname)
+
 avg_obs <-obs_dt[,lapply(.SD,mean),
-                 by=c("participant", "activity", "activity name")]
+                 by=c("participant", "activity", "ActivityName")]
 tidy_data <<- avg_obs[order(avg_obs$participant, avg_obs$activity),]
 
 }
