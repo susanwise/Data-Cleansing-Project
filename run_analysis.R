@@ -2,8 +2,9 @@
 ## all the steps needed to read the text files and create a 
 ## tidy_data data.table  
 ## after running the function, the global environment will contain
-## a tidy_data data frame that contains 180 rows as well as an 
-## obs_dt data frame that contains 10299 unsummarized rows of data
+## a tidy_data data frame that contains 180 rows with 69 columns
+## as well as an obs_dt data frame that contains 10299
+## unsummarized rows of data
 
 run_analysis <- function () {
 ##this script requires the data.table library
